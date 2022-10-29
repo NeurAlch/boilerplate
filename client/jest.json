@@ -1,0 +1,35 @@
+{
+  "testPathIgnorePatterns": [
+    "<rootDir>/node_modules"
+  ],
+  "moduleNameMapper": {
+    "^.+\\.svg$": "<rootDir>/shared/client/__mocks__/svgImportMock.ts"
+  },
+  "moduleFileExtensions": ["js", "json", "ts", "tsx"],
+  "rootDir": ".",
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "collectCoverageFrom": [
+    "<rootDir>/admin/**/*.{ts,tsx}",
+    "<rootDir>/shared/**/*.{ts,tsx}",
+    "!<rootDir>/shared/test-utils/"
+  ],
+  "moduleDirectories": [
+    "<rootDir>/node_modules",
+    "<rootDir>/admin",
+    "<rootDir>/shared"
+  ],
+  "globals": {
+    "__DEV__": true
+  },
+  "preset": "ts-jest",
+  "setupFilesAfterEnv": [
+    "<rootDir>/shared/setupTests.ts"
+  ],
+  "roots": [
+    "<rootDir>/admin",
+    "<rootDir>/shared"
+  ]
+}

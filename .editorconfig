@@ -1,0 +1,14 @@
+root = true
+
+[*]
+end_of_line = lf
+
+[*.{ts,tsx,html,md,css,json,sql,sh}]
+charset = utf-8
+indent_style = space
+indent_size = 2
+max_line_length = 120
+insert_final_newline = true
+trim_trailing_whitespace = true
+ij_javascript_use_double_quotes = false
+ij_typescript_use_double_quotes = false

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "target": "ESNext",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "incremental": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "paths": {
+      "test-client": ["shared/test-utils/test-client.tsx"],
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

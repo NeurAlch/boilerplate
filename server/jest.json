@@ -1,0 +1,35 @@
+{
+  "testPathIgnorePatterns": [
+    "<rootDir>/node_modules",
+    "<rootDir>/admin/database"
+  ],
+  "collectCoverageFrom": [
+    "<rootDir>/admin/**/*.ts",
+    "!<rootDir>/admin/database",
+    "<rootDir>/shared/**/*.ts",
+    "!<rootDir>/shared/setupTests.ts",
+    "!<rootDir>/shared/test-utils"
+  ],
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleDirectories": [
+    "<rootDir>/node_modules",
+    "<rootDir>/admin",
+    "<rootDir>/shared"
+  ],
+  "globals": {
+    "__DEV__": true
+  },
+  "preset": "ts-jest",
+  "setupFilesAfterEnv": [
+    "<rootDir>/shared/setupTests.ts"
+  ],
+  "roots": [
+    "<rootDir>/admin",
+    "<rootDir>/shared"
+  ]
+}

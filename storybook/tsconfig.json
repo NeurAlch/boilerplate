@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "target": "ES2017",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "incremental": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "paths": {
+      "@shared/*": ["../client/shared/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
