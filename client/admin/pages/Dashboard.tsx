@@ -1,6 +1,6 @@
 import Button from '../../shared/components/Button';
 
-const Homepage = () => {
+const Dashboard = () => {
   return (
     <div>
       <Button>Something</Button>
@@ -8,4 +8,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Dashboard;

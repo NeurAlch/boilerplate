@@ -1,5 +1,5 @@
-# SEO Toolbox
+# Boilerplate
 
 _Still in Development_
 
-A personal collection of SEO tools for SEO.
+A boilerplate project for multiple web apps using the same codebase.
